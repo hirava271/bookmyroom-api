@@ -11,7 +11,7 @@ import { MongooseModule } from '@nestjs/mongoose';
             autoSchemaFile: 'schema.gql'
         }),
         MongooseModule.forRoot(
-            'mongodb+srv://book-my-room-a2:admin@cluster0-91cnb.mongodb.net/test?retryWrites=true&w=majority'
+            'mongodb+srv://book-my-room-a2:admin@book-my-room-cluster-91cnb.mongodb.net/test?retryWrites=true&w=majority'
         ),
         RoomsModule,
     ],
