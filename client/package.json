@@ -19,7 +19,6 @@
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
-        "heroku-postbuild": "npm run build",
         "test:CI": "CI=true react-scripts test --passWithNoTests",
         "test:watch": "react-scripts test",
         "eject": "react-scripts eject",
