@@ -29,8 +29,7 @@
         "lint:fix": "eslint --fix 'src/**'"
     },
     "husky": {
-        "hooks": {
-        }
+        "hooks": {}
     },
     "eslintConfig": {
         "extends": "react-app"
