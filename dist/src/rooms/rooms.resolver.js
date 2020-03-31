@@ -11,7 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const graphql_1 = require("@nestjs/graphql");
 const rooms_service_1 = require("./rooms.service");
-const get_rooms_dto_1 = require("./dto/get-rooms.dto");
+const get_rooms_dto_1 = require("../../model/dto/get-rooms.dto");
 let RoomsResolver = class RoomsResolver {
     constructor(roomsService) {
         this.roomsService = roomsService;

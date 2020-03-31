@@ -1,20 +1,20 @@
-import React from 'react';
-// eslint-disable-next-line no-unused-vars
-// eslint-disable-next-line no-unused-vars
+import React, {useEffect, useState} from 'react';
+import axios from 'axios';
 import {
     DatePickerComponent,
     TimePickerComponent,
 } from '@syncfusion/ej2-react-calendars';
 import './index.css';
+import {Room} from "../../model/interfaces/room.interface";
 
 function App(): JSX.Element {
-    // const [rooms, setRooms] = useState<Room[]>([]);
+    const [rooms, setRooms] = useState<Room[]>([]);
 
-    // useEffect(() => {
-    //     axios.get<Room[]>('/api/rooms').then(response => {
-    //         setRooms(response.data);
-    //     });
-    // }, []);
+    useEffect(() => {
+        axios.get<Room[]>(`${process.env.REACT_APP_URL}rooms`).then(response => {
+            setRooms(response.data);
+        });
+    }, []);
 
     return (
         <div>
@@ -33,6 +33,14 @@ function App(): JSX.Element {
                     </div>
                 </div>
             </div>
+            {rooms.length > 0 &&
+            rooms.map((room: Room, index: number) => {
+                return (
+                    <div key={index}>
+                        <span>{room.name}</span>
+                    </div>
+                );
+            })}
         </div>
     );
 }

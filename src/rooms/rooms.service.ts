@@ -1,7 +1,7 @@
 import { Model } from 'mongoose';
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
-import { Room } from './interfaces/room.interface';
+import { Room } from '../../model/interfaces/room.interface';
 
 @Injectable()
 export class RoomsService {

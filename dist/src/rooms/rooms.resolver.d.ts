@@ -3,5 +3,5 @@ export declare class RoomsResolver {
     private readonly roomsService;
     constructor(roomsService: RoomsService);
     hello(): Promise<string>;
-    rooms(): Promise<import("./interfaces/room.interface").Room[]>;
+    rooms(): Promise<import("../../model/interfaces/room.interface").Room[]>;
 }

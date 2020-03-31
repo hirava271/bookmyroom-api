@@ -6,8 +6,8 @@ const core_1 = require("@nestjs/core");
 const app_module_1 = require("./app.module");
 async function bootstrap() {
     const app = await core_1.NestFactory.create(app_module_1.AppModule);
-    app.use('/', express.static(path_1.join(process.cwd(), "/client/build")));
-    console.log(path_1.join(process.cwd(), "/client/build"));
+    app.use(express.static(path_1.join(process.cwd(), "/client/build")));
+    app.enableCors();
     await app.listen(process.env.PORT || 8080);
 }
 bootstrap();

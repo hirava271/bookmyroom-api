@@ -1,5 +1,5 @@
 import { Model } from 'mongoose';
-import { Room } from './interfaces/room.interface';
+import { Room } from '../../model/interfaces/room.interface';
 export declare class RoomsService {
     private roomModel;
     constructor(roomModel: Model<Room>);

@@ -1,6 +1,6 @@
 import { Query, Resolver } from '@nestjs/graphql';
 import { RoomsService } from './rooms.service';
-import { GetRoomsDto } from './dto/get-rooms.dto';
+import { GetRoomsDto } from '../../model/dto/get-rooms.dto';
 
 @Resolver( )
 export class RoomsResolver {
