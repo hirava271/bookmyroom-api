@@ -8,6 +8,7 @@ async function bootstrap() {
     const app = await core_1.NestFactory.create(app_module_1.AppModule);
     app.use(express.static(path_1.join(process.cwd(), "/client/build")));
     app.enableCors();
+    app.setGlobalPrefix('/api');
     await app.listen(process.env.PORT || 8080);
 }
 bootstrap();

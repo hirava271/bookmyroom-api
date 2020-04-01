@@ -3341,7 +3341,7 @@
         "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644"
       },
       "../src/main.ts": {
-        "version": "5df9062815fb453b2e69f50118e700fdcd5761cfb8d1e936afec35bd3f3714d0",
+        "version": "ca3943f19742d3ec79a3714bbeb1f0a26ab22a9d6f613f117f80fc2f8d7a01c5",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
       },
       "../node_modules/@types/anymatch/index.d.ts": {
